@@ -14,4 +14,4 @@ $(foo)->bar();
 
 ## Notes
 Pushed this out as soon as I finished so there are limitations.
-First, you cannot use pointer types as it will default to taking the address. Second, complex types can only be used if typedefed (eg. function pointer types).
+First, you cannot use pointer types as it will default to taking the address. Second, complex types can only be used if typedefed (eg. function pointer types). You should also be careful with the types of functions you use, as the C -> C++ type conversion is hardcoded.
