@@ -4,7 +4,7 @@ This is a single header utility that lets you register and call normal C functio
 ## Registering
 To enable "reflection" on functions, you must supply the base type and necessary functions to the ``$register`` macro. Functions must be passed with the syntax ``(return_type)(name)(arguments...)``. Here is an example:
 ```c
-$register(Foo, void(bar)(Foo*));
+$register(Foo, (void)(bar)(Foo*));
 ```
 To define a member as usable, you must use the ``$def`` macro. You can then use the ``$`` macro to access the table. An example is:
 ```c
